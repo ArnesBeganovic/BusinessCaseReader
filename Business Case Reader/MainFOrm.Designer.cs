@@ -37,19 +37,19 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.bth_ReadSheet = new System.Windows.Forms.Button();
             this.lb_SheetNames = new System.Windows.Forms.ListBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.btn_ExportCSV = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView = new System.Windows.Forms.DataGridView();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lbl_Info = new System.Windows.Forms.Label();
             this.tabovi.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Loading)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -122,9 +122,9 @@
             // 
             this.tabPage2.BackgroundImage = global::Business_Case_Reader.Properties.Resources.The_Right_Advancements_Hero;
             this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage2.Controls.Add(this.lbl_Info);
             this.tabPage2.Controls.Add(this.bth_ReadSheet);
             this.tabPage2.Controls.Add(this.lb_SheetNames);
-            this.tabPage2.Controls.Add(this.label1);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -142,6 +142,7 @@
             this.bth_ReadSheet.TabIndex = 10;
             this.bth_ReadSheet.Text = "Read Sheet";
             this.bth_ReadSheet.UseVisualStyleBackColor = true;
+            this.bth_ReadSheet.Click += new System.EventHandler(this.bth_ReadSheet_Click);
             // 
             // lb_SheetNames
             // 
@@ -150,25 +151,14 @@
             this.lb_SheetNames.Name = "lb_SheetNames";
             this.lb_SheetNames.Size = new System.Drawing.Size(165, 303);
             this.lb_SheetNames.TabIndex = 4;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(10, 20);
-            this.label1.Name = "label1";
-            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label1.Size = new System.Drawing.Size(203, 26);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Select Sheet with Financial data summary\r\nand then press button Read Sheet";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lb_SheetNames.SelectedIndexChanged += new System.EventHandler(this.lb_SheetNames_SelectedIndexChanged);
             // 
             // tabPage3
             // 
             this.tabPage3.BackgroundImage = global::Business_Case_Reader.Properties.Resources.bck_Vozilo;
             this.tabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage3.Controls.Add(this.btn_ExportCSV);
-            this.tabPage3.Controls.Add(this.dataGridView1);
+            this.tabPage3.Controls.Add(this.dataGridView);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -186,14 +176,14 @@
             this.btn_ExportCSV.Text = "Submit";
             this.btn_ExportCSV.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dataGridView
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.GrayText;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(21, 22);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(591, 273);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridView.BackgroundColor = System.Drawing.SystemColors.GrayText;
+            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView.Location = new System.Drawing.Point(10, 22);
+            this.dataGridView.Name = "dataGridView";
+            this.dataGridView.Size = new System.Drawing.Size(613, 273);
+            this.dataGridView.TabIndex = 0;
             // 
             // pictureBox3
             // 
@@ -223,6 +213,16 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // lbl_Info
+            // 
+            this.lbl_Info.AutoSize = true;
+            this.lbl_Info.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Info.ForeColor = System.Drawing.Color.White;
+            this.lbl_Info.Location = new System.Drawing.Point(210, 131);
+            this.lbl_Info.Name = "lbl_Info";
+            this.lbl_Info.Size = new System.Drawing.Size(0, 16);
+            this.lbl_Info.TabIndex = 11;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -242,7 +242,7 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -260,14 +260,14 @@
         private System.Windows.Forms.ListBox lb_SheetNames;
         private System.Windows.Forms.PictureBox pic_Loading;
         private System.Windows.Forms.TextBox tb_FileName;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabControl tabovi;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button bth_ReadSheet;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button btn_ExportCSV;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView;
+        private System.Windows.Forms.Label lbl_Info;
     }
 }
 
