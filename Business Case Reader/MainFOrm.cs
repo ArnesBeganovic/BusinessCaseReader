@@ -5,6 +5,7 @@ using DocumentFormat.OpenXml.Spreadsheet;
 using System.Linq;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
 
 namespace Business_Case_Reader
 {
@@ -19,8 +20,8 @@ namespace Business_Case_Reader
             //Initialize component and setup controls
             InitializeComponent();
             btn_browseBC.Enabled = true;
-            //bth_ReadSheet.Enabled = false;
-            //btn_ExportCSV.Enabled = false;
+            bth_ReadSheet.Enabled = false;
+            btn_ExportCSV.Enabled = false;
         }
         private void btn_browseBC_Click(object sender, EventArgs e)
         {
@@ -41,15 +42,15 @@ namespace Business_Case_Reader
                 //Prepare visibility and enable/disable what has to be prepared
                 pic_Loading.Visible = true;
                 btn_browseBC.Enabled = true;
-                //bth_ReadSheet.Enabled = false;
-                //btn_ExportCSV.Enabled = false;
+                bth_ReadSheet.Enabled = false;
+                btn_ExportCSV.Enabled = false;
                 
                 //Refresh controles to be visible for user
                 pic_Loading.Refresh();
                 tb_FileName.Refresh();
                 btn_browseBC.Refresh();
-                //bth_ReadSheet.Refresh();
-                //btn_ExportCSV.Refresh();
+                bth_ReadSheet.Refresh();
+                btn_ExportCSV.Refresh();
 
 
                 // Analyze attached file
@@ -231,6 +232,7 @@ namespace Business_Case_Reader
             dataGridView.Columns["isOK"].ReadOnly = true;
 
             //Select third tab
+            btn_ExportCSV.Enabled = true;
             tabovi.SelectedIndex = 2;
         }
         public static string ProcitajNaSheetu(WorkbookPart wbPart, Sheet theSheet, string whereToLook)
@@ -365,6 +367,82 @@ namespace Business_Case_Reader
                 {
                     MessageBox.Show("Something went wrong!!!");
                 }
+            }
+        }
+        private void btn_ExportCSV_Click(object sender, EventArgs e)
+        {
+            /*
+             * Calls function which exports datagrid
+             */
+
+            //TBD 2 - logic for export. If there are false in column isOK, should I export or ask user to update its template???
+            SaveToCSV(dataGridView);
+        }
+        private void SaveToCSV(DataGridView DGV)
+        {
+            /*
+             * Result - it exports datagrid in csv file. It raises output directory for user to save it somewhere.
+             */
+
+            //Prepare working variables
+            string filename = "";
+            SaveFileDialog sfd = new SaveFileDialog();
+            sfd.Filter = "CSV (*.csv)|*.csv";
+            sfd.FileName = "Output.csv"; //TBD 3 - File name can be connected with hash code.
+
+            //Show dialog box and wait for OK
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                //Notify user
+                MessageBox.Show("Data will be exported and you will be notified when it is ready.");
+
+                //Try to replace file if already exists. Otherwise save new file
+                if (File.Exists(filename))
+                {
+                    try
+                    {
+                        File.Delete(filename);
+                    }
+                    catch (IOException ex)
+                    {
+                        MessageBox.Show("It wasn't possible to write the data to the disk." + ex.Message);
+                    }
+                }
+
+                //prepare variables for datagrid reading
+                int columnCount = DGV.ColumnCount;
+                string columnNames = "";
+                string[] output = new string[DGV.RowCount + 1];
+
+                //loop all columns and collect names for first row
+                for (int i = 0; i < columnCount; i++)
+                {
+                    columnNames += DGV.Columns[i].Name.ToString() + ",";
+                }
+                output[0] += columnNames;
+
+                //loop all data
+                for (int i = 1; (i - 1) < DGV.RowCount; i++)
+                {
+                    for (int j = 0; j < columnCount; j++)
+                    {
+                        string enterValue;
+                        if(DGV.Rows[i - 1].Cells[j].Value == null)
+                        {
+                            enterValue = "";
+                        } else
+                        {
+                            enterValue = DGV.Rows[i - 1].Cells[j].Value.ToString();
+                        }
+                        output[i] += enterValue + ",";
+                    }
+                }
+
+                //Send everything to previously created file
+                System.IO.File.WriteAllLines(sfd.FileName, output, System.Text.Encoding.UTF8);
+
+                //Notify user
+                MessageBox.Show("Your file was generated and its ready for use.");
             }
         }
     }    

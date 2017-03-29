@@ -35,6 +35,7 @@
             this.pic_Loading = new System.Windows.Forms.PictureBox();
             this.tb_FileName = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.lbl_Info = new System.Windows.Forms.Label();
             this.bth_ReadSheet = new System.Windows.Forms.Button();
             this.lb_SheetNames = new System.Windows.Forms.ListBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
@@ -43,7 +44,6 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lbl_Info = new System.Windows.Forms.Label();
             this.tabovi.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Loading)).BeginInit();
@@ -133,6 +133,16 @@
             this.tabPage2.Text = "Available Sheets";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // lbl_Info
+            // 
+            this.lbl_Info.AutoSize = true;
+            this.lbl_Info.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Info.ForeColor = System.Drawing.Color.White;
+            this.lbl_Info.Location = new System.Drawing.Point(210, 131);
+            this.lbl_Info.Name = "lbl_Info";
+            this.lbl_Info.Size = new System.Drawing.Size(0, 16);
+            this.lbl_Info.TabIndex = 11;
+            // 
             // bth_ReadSheet
             // 
             this.bth_ReadSheet.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -175,6 +185,7 @@
             this.btn_ExportCSV.TabIndex = 1;
             this.btn_ExportCSV.Text = "Submit";
             this.btn_ExportCSV.UseVisualStyleBackColor = true;
+            this.btn_ExportCSV.Click += new System.EventHandler(this.btn_ExportCSV_Click);
             // 
             // dataGridView
             // 
@@ -212,16 +223,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(182, 74);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // lbl_Info
-            // 
-            this.lbl_Info.AutoSize = true;
-            this.lbl_Info.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Info.ForeColor = System.Drawing.Color.White;
-            this.lbl_Info.Location = new System.Drawing.Point(210, 131);
-            this.lbl_Info.Name = "lbl_Info";
-            this.lbl_Info.Size = new System.Drawing.Size(0, 16);
-            this.lbl_Info.TabIndex = 11;
             // 
             // MainForm
             // 
