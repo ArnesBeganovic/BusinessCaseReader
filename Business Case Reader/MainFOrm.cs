@@ -22,6 +22,11 @@ namespace Business_Case_Reader
             btn_browseBC.Enabled = true;
             bth_ReadSheet.Enabled = false;
             btn_ExportCSV.Enabled = false;
+
+            //Prevent resize, remove minimize and whole screen button
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
         }
         private void btn_browseBC_Click(object sender, EventArgs e)
         {
@@ -77,15 +82,17 @@ namespace Business_Case_Reader
              */
             List<TranlationTable> trTable = new List<TranlationTable>();
 
-            trTable.Add(new TranlationTable() { id = 1, description = "LTA", exportValue = null, fieldForValue = "K17", textToCheck = "LTA:", fieldForCheck = "J17", year = null, isOK = false, isForTBL = true, isHeader=true, ExportPart=3 });
-            trTable.Add(new TranlationTable() { id = 2, description = "CI", exportValue = null, fieldForValue = "G17", textToCheck = "CI:", fieldForCheck = "F17", year = null, isOK = false, isForTBL = true, isHeader = true, ExportPart = 3 });
-            trTable.Add(new TranlationTable() { id = 3, description = "Fuel", exportValue = null, fieldForValue = "I17", textToCheck = "Fuel:", fieldForCheck = "H17", year = null, isOK = false, isForTBL = true, isHeader = true, ExportPart = 3 });
-            trTable.Add(new TranlationTable() { id = 4, description = "Wage Economics", exportValue = null, fieldForValue = "E17", textToCheck = "Wage Economics:", fieldForCheck = "D17", year = null, isOK = false, isForTBL = true, isHeader = true, ExportPart = 3 });
-            //trTable.Add(new TranlationTable() { id = 5, description = "New Bldg", exportValue = null, fieldForValue = "G17", textToCheck = "CI:", fieldForCheck = "F17", year = null, isOK = false, isForTBL = true, isHeader=true, ExportPart=3 });
-            trTable.Add(new TranlationTable() { id = 6, description = "WACC", exportValue = null, fieldForValue = "X13", textToCheck = "WACC:", fieldForCheck = "W12", year = null, isOK = false, isForTBL = true, isHeader = true, ExportPart = 3 });
-            trTable.Add(new TranlationTable() { id = 7, description = "Material Savings", exportValue = null, fieldForValue = "E19", textToCheck = "Wage Economics:", fieldForCheck = "D17", year = null, isOK = false, isForTBL = true, isHeader = true, ExportPart = 3 });
-            trTable.Add(new TranlationTable() { id = 8, description = "Material Ecconomics", exportValue = null, fieldForValue = "E25", textToCheck = "Wage Economics:", fieldForCheck = "D17", year = null, isOK = false, isForTBL = true, isHeader = true, ExportPart = 3 });
-            trTable.Add(new TranlationTable() { id = 9, description = "Major Capex Items", exportValue = null, fieldForValue = "E12", textToCheck = "Major Capex Items:", fieldForCheck = "C12", year = null, isOK = false, isForTBL = true, isHeader = true, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 1, description = "LTA", exportValue = null, fieldForValue = "K17", textToCheck = "LTA:", fieldForCheck = "J17", year = null, isOK = false, isForTBL = true, TBLid = 1, isHeader =true, ExportPart=3 });
+            trTable.Add(new TranlationTable() { id = 2, description = "CI", exportValue = null, fieldForValue = "G17", textToCheck = "CI:", fieldForCheck = "F17", year = null, isOK = false, isForTBL = true, TBLid = 2, isHeader = true, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 3, description = "Fuel", exportValue = null, fieldForValue = "I17", textToCheck = "Fuel:", fieldForCheck = "H17", year = null, isOK = false, isForTBL = true, TBLid = 3, isHeader = true, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 4, description = "Wage Economics", exportValue = null, fieldForValue = "E17", textToCheck = "Wage Economics:", fieldForCheck = "D17", year = null, isOK = false, isForTBL = true, TBLid = 4, isHeader = true, ExportPart = 3 });
+            //trTable.Add(new TranlationTable() { id = 5, description = "New Bldg", exportValue = null, fieldForValue = "G17", textToCheck = "New Bldg:", fieldForCheck = "F17", year = null, isOK = false, isForTBL = true,TBLid = 5, isHeader=true, ExportPart=3 });
+            trTable.Add(new TranlationTable() { id = 6, description = "WACC", exportValue = null, fieldForValue = "X13", textToCheck = "WACC:", fieldForCheck = "W12", year = null, isOK = false, isForTBL = true, TBLid = 6, isHeader = true, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 7, description = "Material Savings", exportValue = null, fieldForValue = "E19", textToCheck = "Wage Economics:", fieldForCheck = "D17", year = null, isOK = false, isForTBL = true, TBLid = 7, isHeader = true, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 8, description = "Material Ecconomics", exportValue = null, fieldForValue = "E25", textToCheck = "Wage Economics:", fieldForCheck = "D17", year = null, isOK = false, isForTBL = true, TBLid = 8, isHeader = true, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 9, description = "Major Capex Items", exportValue = null, fieldForValue = "E12", textToCheck = "Major Capex Items:", fieldForCheck = "C12", year = null, isOK = false, isForTBL = true, TBLid = 9, isHeader = true, ExportPart = 3 });
+
+
             return trTable;
         }
         void AnalizirajFajl(string fileName)
@@ -196,7 +203,8 @@ namespace Business_Case_Reader
                                                 year = lineObject.year,
                                                 isOK = lineObject.isOK,
                                                 isForTBL = lineObject.isForTBL,
-                                                isHeader=lineObject.isHeader,
+                                                TBLid = lineObject.TBLid,
+                                                isHeader =lineObject.isHeader,
                                                 ExportPart = lineObject.ExportPart
                 });
             }

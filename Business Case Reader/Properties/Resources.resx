@@ -154,4 +154,10 @@
   <data name="The_Right_Products_Hero" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\The_Right_Products_Hero.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_mtR_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_mtR_icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

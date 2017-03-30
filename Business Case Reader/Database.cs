@@ -54,6 +54,10 @@ namespace Business_Case_Reader
          * isForTBL - Data export is used for two Salesforce applications simultaneously. One of them is using all provided data but the other one is using some
          * of the lines. If this filed is true, then this line is used by TBL only.
          * 
+         * TBLid - each possition is marked from 1-81 and in huge data export there are some fields that are common for TBL and Business Case app. Those fields
+         * have isForTBL = true and Id is here. For example LTA has id 1, Protptype Tooling 32, Payback Period 19 etc. VisualForce page will contains table
+         * mapped with this Id's and exported table can be filtered by isForTBL=True, order by TBLid and then basic javascript loop will populate all filds 
+         * 
          * isHeader - Header and details data are normaly stored in two separate tables. This field is making distinction between them. Header data are 
          * marked with 1, detail data is marked with 0
          * 
@@ -68,6 +72,7 @@ namespace Business_Case_Reader
          */
         public bool isOK { get; set; }
         public bool isForTBL { get; set; }
+        public int TBLid { get; set; }
         public bool isHeader { get; set; }
         public int ExportPart { get; set; }
     }
@@ -85,6 +90,7 @@ namespace Business_Case_Reader
         public string year { get; set; }
         public bool isOK { get; set; }
         public bool isForTBL { get; set; }
+        public int TBLid { get; set; }
         public bool isHeader { get; set; }
         public int ExportPart { get; set; }
     }

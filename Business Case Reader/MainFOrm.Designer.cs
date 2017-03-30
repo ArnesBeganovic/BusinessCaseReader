@@ -44,6 +44,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabovi.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Loading)).BeginInit();
@@ -66,10 +67,10 @@
             this.tabovi.Controls.Add(this.tabPage1);
             this.tabovi.Controls.Add(this.tabPage2);
             this.tabovi.Controls.Add(this.tabPage3);
-            this.tabovi.Location = new System.Drawing.Point(-2, 138);
+            this.tabovi.Location = new System.Drawing.Point(12, 138);
             this.tabovi.Name = "tabovi";
             this.tabovi.SelectedIndex = 0;
-            this.tabovi.Size = new System.Drawing.Size(637, 416);
+            this.tabovi.Size = new System.Drawing.Size(952, 508);
             this.tabovi.TabIndex = 10;
             // 
             // tabPage1
@@ -82,14 +83,14 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(629, 390);
+            this.tabPage1.Size = new System.Drawing.Size(944, 482);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Browse File";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // btn_browseBC
             // 
-            this.btn_browseBC.Location = new System.Drawing.Point(481, 160);
+            this.btn_browseBC.Location = new System.Drawing.Point(808, 426);
             this.btn_browseBC.Name = "btn_browseBC";
             this.btn_browseBC.Size = new System.Drawing.Size(131, 32);
             this.btn_browseBC.TabIndex = 3;
@@ -100,7 +101,7 @@
             // pic_Loading
             // 
             this.pic_Loading.Image = global::Business_Case_Reader.Properties.Resources.loading;
-            this.pic_Loading.Location = new System.Drawing.Point(143, 29);
+            this.pic_Loading.Location = new System.Drawing.Point(270, 153);
             this.pic_Loading.Name = "pic_Loading";
             this.pic_Loading.Size = new System.Drawing.Size(334, 104);
             this.pic_Loading.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -112,7 +113,7 @@
             // 
             this.tb_FileName.Enabled = false;
             this.tb_FileName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_FileName.Location = new System.Drawing.Point(68, 160);
+            this.tb_FileName.Location = new System.Drawing.Point(410, 428);
             this.tb_FileName.Name = "tb_FileName";
             this.tb_FileName.Size = new System.Drawing.Size(392, 30);
             this.tb_FileName.TabIndex = 8;
@@ -128,7 +129,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(629, 390);
+            this.tabPage2.Size = new System.Drawing.Size(944, 482);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Available Sheets";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -146,7 +147,7 @@
             // bth_ReadSheet
             // 
             this.bth_ReadSheet.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bth_ReadSheet.Location = new System.Drawing.Point(468, 60);
+            this.bth_ReadSheet.Location = new System.Drawing.Point(794, 445);
             this.bth_ReadSheet.Name = "bth_ReadSheet";
             this.bth_ReadSheet.Size = new System.Drawing.Size(144, 31);
             this.bth_ReadSheet.TabIndex = 10;
@@ -159,7 +160,7 @@
             this.lb_SheetNames.FormattingEnabled = true;
             this.lb_SheetNames.Location = new System.Drawing.Point(27, 60);
             this.lb_SheetNames.Name = "lb_SheetNames";
-            this.lb_SheetNames.Size = new System.Drawing.Size(165, 303);
+            this.lb_SheetNames.Size = new System.Drawing.Size(165, 407);
             this.lb_SheetNames.TabIndex = 4;
             this.lb_SheetNames.SelectedIndexChanged += new System.EventHandler(this.lb_SheetNames_SelectedIndexChanged);
             // 
@@ -167,19 +168,20 @@
             // 
             this.tabPage3.BackgroundImage = global::Business_Case_Reader.Properties.Resources.bck_Vozilo;
             this.tabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage3.Controls.Add(this.label1);
             this.tabPage3.Controls.Add(this.btn_ExportCSV);
             this.tabPage3.Controls.Add(this.dataGridView);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(629, 390);
+            this.tabPage3.Size = new System.Drawing.Size(944, 482);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Control Data";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // btn_ExportCSV
             // 
-            this.btn_ExportCSV.Location = new System.Drawing.Point(454, 322);
+            this.btn_ExportCSV.Location = new System.Drawing.Point(780, 443);
             this.btn_ExportCSV.Name = "btn_ExportCSV";
             this.btn_ExportCSV.Size = new System.Drawing.Size(158, 33);
             this.btn_ExportCSV.TabIndex = 1;
@@ -191,15 +193,15 @@
             // 
             this.dataGridView.BackgroundColor = System.Drawing.SystemColors.GrayText;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Location = new System.Drawing.Point(10, 22);
+            this.dataGridView.Location = new System.Drawing.Point(10, 64);
             this.dataGridView.Name = "dataGridView";
-            this.dataGridView.Size = new System.Drawing.Size(613, 273);
+            this.dataGridView.Size = new System.Drawing.Size(928, 373);
             this.dataGridView.TabIndex = 0;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Business_Case_Reader.Properties.Resources.businessCaseReader;
-            this.pictureBox3.Location = new System.Drawing.Point(256, 25);
+            this.pictureBox3.Location = new System.Drawing.Point(606, 22);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(358, 50);
             this.pictureBox3.TabIndex = 2;
@@ -210,7 +212,7 @@
             this.pictureBox2.Image = global::Business_Case_Reader.Properties.Resources.baner_blue;
             this.pictureBox2.Location = new System.Drawing.Point(-2, 92);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(637, 40);
+            this.pictureBox2.Size = new System.Drawing.Size(980, 40);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -224,12 +226,23 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(315, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(287, 24);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Control data before Submiting";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(632, 548);
+            this.ClientSize = new System.Drawing.Size(976, 658);
             this.Controls.Add(this.tabovi);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -243,6 +256,7 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -269,6 +283,7 @@
         private System.Windows.Forms.Button btn_ExportCSV;
         private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.Label lbl_Info;
+        private System.Windows.Forms.Label label1;
     }
 }
 

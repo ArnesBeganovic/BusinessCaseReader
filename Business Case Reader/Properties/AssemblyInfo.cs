@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Business Case Reader")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Johnson Controls")]
+[assembly: AssemblyCompany("Adient")]
 [assembly: AssemblyProduct("Business Case Reader")]
-[assembly: AssemblyCopyright("Copyright © Johnson Controls 2017")]
+[assembly: AssemblyCopyright("Copyright © Adient 2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

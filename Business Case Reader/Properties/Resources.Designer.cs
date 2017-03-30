@@ -22,7 +22,7 @@ namespace Business_Case_Reader.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace Business_Case_Reader.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Business_Case_Reader.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace Business_Case_Reader.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace Business_Case_Reader.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap baner_blue {
+        public static System.Drawing.Bitmap baner_blue {
             get {
                 object obj = ResourceManager.GetObject("baner_blue", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -73,7 +73,7 @@ namespace Business_Case_Reader.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bck_Vozilo {
+        public static System.Drawing.Bitmap bck_Vozilo {
             get {
                 object obj = ResourceManager.GetObject("bck_Vozilo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -83,7 +83,7 @@ namespace Business_Case_Reader.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap businessCaseReader {
+        public static System.Drawing.Bitmap businessCaseReader {
             get {
                 object obj = ResourceManager.GetObject("businessCaseReader", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -93,7 +93,27 @@ namespace Business_Case_Reader.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap loading {
+        public static System.Drawing.Bitmap icon {
+            get {
+                object obj = ResourceManager.GetObject("icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        public static System.Drawing.Icon icon_mtR_icon {
+            get {
+                object obj = ResourceManager.GetObject("icon_mtR_icon", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap loading {
             get {
                 object obj = ResourceManager.GetObject("loading", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -103,7 +123,7 @@ namespace Business_Case_Reader.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap logo {
+        public static System.Drawing.Bitmap logo {
             get {
                 object obj = ResourceManager.GetObject("logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -113,7 +133,7 @@ namespace Business_Case_Reader.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap spec_image101 {
+        public static System.Drawing.Bitmap spec_image101 {
             get {
                 object obj = ResourceManager.GetObject("spec_image101", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -123,7 +143,7 @@ namespace Business_Case_Reader.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap spec_image102 {
+        public static System.Drawing.Bitmap spec_image102 {
             get {
                 object obj = ResourceManager.GetObject("spec_image102", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -133,7 +153,7 @@ namespace Business_Case_Reader.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap stepOne {
+        public static System.Drawing.Bitmap stepOne {
             get {
                 object obj = ResourceManager.GetObject("stepOne", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -143,7 +163,7 @@ namespace Business_Case_Reader.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap stepThree {
+        public static System.Drawing.Bitmap stepThree {
             get {
                 object obj = ResourceManager.GetObject("stepThree", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -153,7 +173,7 @@ namespace Business_Case_Reader.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap stepTwo {
+        public static System.Drawing.Bitmap stepTwo {
             get {
                 object obj = ResourceManager.GetObject("stepTwo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -163,7 +183,7 @@ namespace Business_Case_Reader.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap The_Right_Advancements_Hero {
+        public static System.Drawing.Bitmap The_Right_Advancements_Hero {
             get {
                 object obj = ResourceManager.GetObject("The_Right_Advancements_Hero", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -173,7 +193,7 @@ namespace Business_Case_Reader.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap The_Right_Products_Hero {
+        public static System.Drawing.Bitmap The_Right_Products_Hero {
             get {
                 object obj = ResourceManager.GetObject("The_Right_Products_Hero", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
