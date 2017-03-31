@@ -12,7 +12,7 @@ namespace Business_Case_Reader
         //Properties explanation
 
         /*
-         * Id is used to numerically represents what is in description. Financial Business Case sheet contains header data and details data together
+         * Id is used to numerically represent what is in description. Financial Business Case sheet contains header data and details data together
          * Each data part is marked with unique ID so that Salesforce team can create logic for data import. For example, if "Building and Land" information
          * is marked with id 16 that means Salesforce team can build import logic based on their data storage logic. "Building and Land" data will always have id 16
          * in Adient exported file. 
@@ -32,17 +32,17 @@ namespace Business_Case_Reader
         public string fieldForValue { get; set; }
 
         /*
-         * fieldForCheck is contains Excel Cell reference which has value that needs to be checked.
+         * fieldForCheck contains Excel Cell reference which has value that needs to be checked.
          * textToCheck is hard coded string that has to be in Excel cell in order to accept value for export.
          * If cell text does not match text from textToCheck in field refered by fieldForCheck than it means
-         * templates does not match. User needs to have exactly the same template.
+         * templates do not match. User needs to have exactly the same template.
          */
         public string textToCheck { get; set; } //what to search in order to be sure you are taking correct info
         public string fieldForCheck { get; set; } //where is string from previous field placed
 
         /*
          * year is important for detailed data and it is empty for header data. Buildings and Land line can contain value for multiple years and it will use
-         * same id. Year will distinct two objects with same export Id. This can be recognizes by Salesforce team while importing.
+         * same id. Year will distinct two objects with same export Id. This can be recognized by Salesforce team while importing.
          */
         public string year { get; set; } //Not all fields need this
 
@@ -55,8 +55,8 @@ namespace Business_Case_Reader
          * of the lines. If this filed is true, then this line is used by TBL only.
          * 
          * TBLid - each possition is marked from 1-81 and in huge data export there are some fields that are common for TBL and Business Case app. Those fields
-         * have isForTBL = true and Id is here. For example LTA has id 1, Protptype Tooling 32, Payback Period 19 etc. VisualForce page will contains table
-         * mapped with this Id's and exported table can be filtered by isForTBL=True, order by TBLid and then basic javascript loop will populate all filds 
+         * have isForTBL = true and TBLid populated. For example LTA has id 1, Protptype Tooling 32, Payback Period 19 etc. VisualForce page will contain table
+         * mapped with these Id's and exported table can be filtered by isForTBL=True, order by TBLid and then basic javascript loop will populate all filds 
          * 
          * isHeader - Header and details data are normaly stored in two separate tables. This field is making distinction between them. Header data are 
          * marked with 1, detail data is marked with 0
