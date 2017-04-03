@@ -114,54 +114,91 @@ namespace Business_Case_Reader
             trTable.Add(new TranlationTable() { id = 24, description = "Net Working Capital", exportValue = null, fieldForValue = "53,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Net Working Capital:", fieldForCheck = "C53", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
 
             //Investment Change Net Inflow/Outflow
-            //trTable.Add(new TranlationTable() { id = 25, description = "Investment Change Net Inflow/Outflow", exportValue = null, fieldForValue = "55,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Investment Change Net Inflow/Outflow:", fieldForCheck = "C55", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 25, description = "Investment Change Net Inflow/Outflow", exportValue = null, fieldForValue = "55,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Investment Change Net Inflow/Outflow:", fieldForCheck = "C55", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+
+            //expressed as
+            trTable.Add(new TranlationTable() { id = 26, description = "expressed as", exportValue = null, fieldForValue = "C60", textToCheck = "expressed as:", fieldForCheck = "B60", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = true, ExportPart = 3 });
 
             //Customer Production Volume
-            trTable.Add(new TranlationTable() { id = 26, description = "Customer Production Volume", exportValue = null, fieldForValue = "62,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Customer Production Volume:", fieldForCheck = "C62", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 27, description = "Customer Production Volume", exportValue = null, fieldForValue = "62,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Customer Production Volume:", fieldForCheck = "C62", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
 
             //Production Planning Volume  - TBD this contains formula. Check with Sven how to handle it
-            trTable.Add(new TranlationTable() { id = 27, description = "Production Planning Volume", exportValue = null, fieldForValue = "64,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Volumes", fieldForCheck = "C58", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 28, description = "Production Planning Volume", exportValue = null, fieldForValue = "64,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Volumes", fieldForCheck = "C58", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
 
             //Capacity Planning Volume - TBD Same as Production Planning volume
-            trTable.Add(new TranlationTable() { id = 28, description = "Capacity Planning Volume", exportValue = null, fieldForValue = "66,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Volumes", fieldForCheck = "C58", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 29, description = "Capacity Planning Volume", exportValue = null, fieldForValue = "66,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Volumes", fieldForCheck = "C58", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
 
             //Sales
-            trTable.Add(new TranlationTable() { id = 29, description = "Sales (@ SOP Prices)", exportValue = null, fieldForValue = "69,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Sales (@ SOP Prices):", fieldForCheck = "C69", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
-            trTable.Add(new TranlationTable() { id = 30, description = "Price Reductions / LTA", exportValue = null, fieldForValue = "70,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Price Reductions / LTA:", fieldForCheck = "C70", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
-            trTable.Add(new TranlationTable() { id = 31, description = "Capitalized Engineering R&D and other Technical Services Depreciation", exportValue = null, fieldForValue = "71,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Capitalized Engineering R&D and other Technical Services Depreciation:", fieldForCheck = "C71", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
-            trTable.Add(new TranlationTable() { id = 32, description = "New Prototype Tooling Amortization", exportValue = null, fieldForValue = "72,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "New Prototype Tooling Amortization:", fieldForCheck = "C72", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
-            trTable.Add(new TranlationTable() { id = 33, description = "New Production Tooling Amortization", exportValue = null, fieldForValue = "73,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "New Production Tooling Amortization:", fieldForCheck = "C73", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
-            trTable.Add(new TranlationTable() { id = 34, description = "Engineering R&D and other Technical Services Amortization", exportValue = null, fieldForValue = "74,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Engineering R&D and other Technical Services Amortization:", fieldForCheck = "C74", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
-            trTable.Add(new TranlationTable() { id = 35, description = "Launch / Start-Up Amortization", exportValue = null, fieldForValue = "75,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Launch / Start-Up Amortization:", fieldForCheck = "C75", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
-            trTable.Add(new TranlationTable() { id = 36, description = "Sales (after Price Reductions / LTA / Amortizations)", exportValue = null, fieldForValue = "76,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Sales (after Price Reductions / LTA / Amortizations):", fieldForCheck = "C76", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 30, description = "Sales (@ SOP Prices)", exportValue = null, fieldForValue = "69,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Sales (@ SOP Prices):", fieldForCheck = "C69", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 31, description = "Price Reductions / LTA", exportValue = null, fieldForValue = "70,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Price Reductions / LTA:", fieldForCheck = "C70", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 32, description = "Capitalized Engineering R&D and other Technical Services Depreciation", exportValue = null, fieldForValue = "71,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Capitalized Engineering R&D and other Technical Services Depreciation:", fieldForCheck = "C71", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 33, description = "New Prototype Tooling Amortization", exportValue = null, fieldForValue = "72,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "New Prototype Tooling Amortization:", fieldForCheck = "C72", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 34, description = "New Production Tooling Amortization", exportValue = null, fieldForValue = "73,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "New Production Tooling Amortization:", fieldForCheck = "C73", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 35, description = "Engineering R&D and other Technical Services Amortization", exportValue = null, fieldForValue = "74,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Engineering R&D and other Technical Services Amortization:", fieldForCheck = "C74", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 36, description = "Launch / Start-Up Amortization", exportValue = null, fieldForValue = "75,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Launch / Start-Up Amortization:", fieldForCheck = "C75", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 37, description = "Sales (after Price Reductions / LTA / Amortizations)", exportValue = null, fieldForValue = "76,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Sales (after Price Reductions / LTA / Amortizations):", fieldForCheck = "C76", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
 
             // Cost of Production
-            trTable.Add(new TranlationTable() { id = 37, description = "Material Cost", exportValue = null, fieldForValue = "79,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Material Cost:", fieldForCheck = "C79", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
-            trTable.Add(new TranlationTable() { id = 38, description = "Foreseen Material Cost Reductions", exportValue = null, fieldForValue = "80,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Foreseen Material Cost Reductions:", fieldForCheck = "C80", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
-            trTable.Add(new TranlationTable() { id = 39, description = "Variable Conversion Cost(incl.Freight in)", exportValue = null, fieldForValue = "81,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Variable Conversion Cost (incl. Freight in):", fieldForCheck = "C81", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
-            trTable.Add(new TranlationTable() { id = 40, description = "Foreseen Variable Conversion Cost Reductions", exportValue = null, fieldForValue = "82,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Foreseen Variable Conversion Cost Reductions:", fieldForCheck = "C82", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
-            trTable.Add(new TranlationTable() { id = 41, description = "Outbound Costs", exportValue = null, fieldForValue = "83,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Outbound Costs:", fieldForCheck = "C83", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
-            trTable.Add(new TranlationTable() { id = 42, description = "Foreseen Outbound Cost Reductions", exportValue = null, fieldForValue = "84,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Foreseen Outbound Cost Reductions:", fieldForCheck = "C84", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
-            trTable.Add(new TranlationTable() { id = 43, description = "Net Tooling Expenditure", exportValue = null, fieldForValue = "85,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Net Tooling Expenditure:", fieldForCheck = "C85", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
-            trTable.Add(new TranlationTable() { id = 44, description = "Other Costs net of Cost Reductions", exportValue = null, fieldForValue = "86,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Other Costs net of Cost Reductions:", fieldForCheck = "C86", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
-            trTable.Add(new TranlationTable() { id = 45, description = "Variable Costs", exportValue = null, fieldForValue = "87,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Variable Costs:", fieldForCheck = "C87", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 38, description = "Material Cost", exportValue = null, fieldForValue = "79,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Material Cost:", fieldForCheck = "C79", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 39, description = "Foreseen Material Cost Reductions", exportValue = null, fieldForValue = "80,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Foreseen Material Cost Reductions:", fieldForCheck = "C80", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 40, description = "Variable Conversion Cost(incl.Freight in)", exportValue = null, fieldForValue = "81,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Variable Conversion Cost (incl. Freight in):", fieldForCheck = "C81", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 41, description = "Foreseen Variable Conversion Cost Reductions", exportValue = null, fieldForValue = "82,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Foreseen Variable Conversion Cost Reductions:", fieldForCheck = "C82", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 42, description = "Outbound Costs", exportValue = null, fieldForValue = "83,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Outbound Costs:", fieldForCheck = "C83", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 43, description = "Foreseen Outbound Cost Reductions", exportValue = null, fieldForValue = "84,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Foreseen Outbound Cost Reductions:", fieldForCheck = "C84", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 44, description = "Net Tooling Expenditure", exportValue = null, fieldForValue = "85,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Net Tooling Expenditure:", fieldForCheck = "C85", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 45, description = "Other Costs net of Cost Reductions", exportValue = null, fieldForValue = "86,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Other Costs net of Cost Reductions:", fieldForCheck = "C86", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 46, description = "Variable Costs", exportValue = null, fieldForValue = "87,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Variable Costs:", fieldForCheck = "C87", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
 
             //Contribution Margin
-            trTable.Add(new TranlationTable() { id = 46, description = "Contribution  Margin", exportValue = null, fieldForValue = "88,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Contribution  Margin:", fieldForCheck = "C88", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
-            trTable.Add(new TranlationTable() { id = 47, description = "Contribution  Margin %", exportValue = null, fieldForValue = "89,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Contribution  Margin %:", fieldForCheck = "C89", year = null, isOK = false, isForTBL = false, TBLid = 10, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 47, description = "Contribution  Margin", exportValue = null, fieldForValue = "88,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Contribution  Margin:", fieldForCheck = "C88", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 48, description = "Contribution  Margin %", exportValue = null, fieldForValue = "89,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Contribution  Margin %:", fieldForCheck = "C89", year = null, isOK = false, isForTBL = false, TBLid = 10, isHeader = false, ExportPart = 3 });
+
+            //Other costs
+            trTable.Add(new TranlationTable() { id = 49, description = "Depreciation", exportValue = null, fieldForValue = "91,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Depreciation:", fieldForCheck = "C91", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 50, description = "Hedge Costs", exportValue = null, fieldForValue = "92,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Hedge Costs:", fieldForCheck = "C92", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 51, description = "Other Fixed Conversion Costs", exportValue = null, fieldForValue = "93,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Other Fixed Conversion Costs:", fieldForCheck = "C93", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 52, description = "Foreseen Fixed Cost Reductions", exportValue = null, fieldForValue = "94,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Foreseen Fixed Cost Reductions:", fieldForCheck = "C94", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 53, description = "Fixed Costs", exportValue = null, fieldForValue = "95,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Fixed Costs:", fieldForCheck = "C95", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+
+            //Margins
+            trTable.Add(new TranlationTable() { id = 54, description = "Gross Margin", exportValue = null, fieldForValue = "96,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Gross Margin:", fieldForCheck = "C96", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 55, description = "Gross Margin %", exportValue = null, fieldForValue = "97,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Gross Margin %:", fieldForCheck = "C97", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
 
             //Cost of Development
-            trTable.Add(new TranlationTable() { id = 47, description = "Non - capitalized Engineering R&D and other Technical Services", exportValue = null, fieldForValue = "100,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Non-capitalized Engineering R&D and other Technical Services:", fieldForCheck = "C100", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
-            trTable.Add(new TranlationTable() { id = 48, description = "Non - capitalized Engineering R&D and other Technical Services Reimbursements", exportValue = null, fieldForValue = "101,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Non-capitalized Engineering R&D and other Technical Services Reimbursements:", fieldForCheck = "C101", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
-            trTable.Add(new TranlationTable() { id = 49, description = "Selling, General and Administrative(SG & A)", exportValue = null, fieldForValue = "102,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Selling, General and Administrative (SG&A):", fieldForCheck = "C102", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
-            trTable.Add(new TranlationTable() { id = 50, description = "Additional SG&A resulting from this Program being associated with a 'Global Program'", exportValue = null, fieldForValue = "103,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Additional SG&A resulting from this Program being associated with a 'Global Program':", fieldForCheck = "C103", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
-            trTable.Add(new TranlationTable() { id = 51, description = "Launch / Start - Up Costs", exportValue = null, fieldForValue = "104,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Launch / Start-Up Costs:", fieldForCheck = "C104", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
-            trTable.Add(new TranlationTable() { id = 52, description = "Launch / Start - Up Cost Reimbursements", exportValue = null, fieldForValue = "105,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Launch / Start-Up Cost Reimbursements:", fieldForCheck = "C105", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
-            trTable.Add(new TranlationTable() { id = 53, description = "Other Costs", exportValue = null, fieldForValue = "106,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Other Costs:", fieldForCheck = "C106", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
-            trTable.Add(new TranlationTable() { id = 54, description = "Cost of Development", exportValue = null, fieldForValue = "107,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Cost of Development:", fieldForCheck = "C107", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 56, description = "Non - capitalized Engineering R&D and other Technical Services", exportValue = null, fieldForValue = "100,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Non-capitalized Engineering R&D and other Technical Services:", fieldForCheck = "C100", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 57, description = "Non - capitalized Engineering R&D and other Technical Services Reimbursements", exportValue = null, fieldForValue = "101,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Non-capitalized Engineering R&D and other Technical Services Reimbursements:", fieldForCheck = "C101", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 58, description = "Selling General and Administrative(SG & A)", exportValue = null, fieldForValue = "102,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Selling, General and Administrative (SG&A):", fieldForCheck = "C102", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 59, description = "Additional SG&A resulting from this Program being associated with a 'Global Program'", exportValue = null, fieldForValue = "103,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Additional SG&A resulting from this Program being associated with a 'Global Program':", fieldForCheck = "C103", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 60, description = "Launch / Start - Up Costs", exportValue = null, fieldForValue = "104,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Launch / Start-Up Costs:", fieldForCheck = "C104", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 61, description = "Launch / Start - Up Cost Reimbursements", exportValue = null, fieldForValue = "105,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Launch / Start-Up Cost Reimbursements:", fieldForCheck = "C105", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 62, description = "Other Costs", exportValue = null, fieldForValue = "106,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Other Costs:", fieldForCheck = "C106", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 63, description = "Cost of Development", exportValue = null, fieldForValue = "107,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Cost of Development:", fieldForCheck = "C107", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
 
             //SINC
-            trTable.Add(new TranlationTable() { id = 55, description = "SINC", exportValue = null, fieldForValue = "110,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "SINC:", fieldForCheck = "C110", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 64, description = "SINC", exportValue = null, fieldForValue = "110,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "SINC:", fieldForCheck = "C110", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+
+            //Program Cash Flow
+            trTable.Add(new TranlationTable() { id = 65, description = "Income Tax %", exportValue = null, fieldForValue = "C113", textToCheck = "Income Tax @", fieldForCheck = "B113", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = true, ExportPart = 3 });
+
+            trTable.Add(new TranlationTable() { id = 66, description = "Income Tax", exportValue = null, fieldForValue = "113,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Income Tax @", fieldForCheck = "B113", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 67, description = "New Equipment Building and Land Depreciation", exportValue = null, fieldForValue = "114,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "New Equipment, Building and Land Depreciation:", fieldForCheck = "C114", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 68, description = "Existing Equipment Building and Land Depreciation", exportValue = null, fieldForValue = "115,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Existing Equipment, Building and Land Depreciation:", fieldForCheck = "C115", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 69, description = "ADNT Owned Tooling Depreciation", exportValue = null, fieldForValue = "116,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "JCI Owned Tooling Depreciation:", fieldForCheck = "C116", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 70, description = "Capitalized Engineering R&D and other Technical Services Depreciation", exportValue = null, fieldForValue = "117,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Capitalized Engineering R&D and other Technical Services Depreciation:", fieldForCheck = "C117", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 71, description = "Other", exportValue = null, fieldForValue = "118,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Other:", fieldForCheck = "C118", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 72, description = "Annual Cash Flow", exportValue = null, fieldForValue = "119,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Annual Cash Flow:", fieldForCheck = "C119", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+
+            trTable.Add(new TranlationTable() { id = 73, description = "Present Value Discount @ WACC %", exportValue = null, fieldForValue = "C121", textToCheck = "Present Value Discount @ WACC", fieldForCheck = "B121", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = true, ExportPart = 3 });
+
+            trTable.Add(new TranlationTable() { id = 74, description = "Present Value Discount @ WACC", exportValue = null, fieldForValue = "121,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Present Value Discount @ WACC", fieldForCheck = "B121", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 75, description = "Present Value of Annual Cash Flow", exportValue = null, fieldForValue = "122,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Present Value of Annual Cash Flow:", fieldForCheck = "C122", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+            trTable.Add(new TranlationTable() { id = 76, description = "Cumulative Discounted Cash Flow", exportValue = null, fieldForValue = "123,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Cumulative Discounted Cash Flow:", fieldForCheck = "C123", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+
+            //Pay Back Period
+            trTable.Add(new TranlationTable() { id = 77, description = "Months contributing to (official) Payback Period", exportValue = null, fieldForValue = "126,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,X", textToCheck = "Months contributing to (official) Payback Period", fieldForCheck = "C126", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = false, ExportPart = 3 });
+
+            //Currency
+            trTable.Add(new TranlationTable() { id = 78, description = "Base Currency", exportValue = null, fieldForValue = "K3", textToCheck = "Base\nCurrency", fieldForCheck = "J3", year = null, isOK = false, isForTBL = false, TBLid = 0, isHeader = true, ExportPart = 3 });
 
 
             return trTable;
@@ -263,7 +300,14 @@ namespace Business_Case_Reader
                 {
                     //Update table isOk variable and find value at sheet
                     lineObject.isOK = true;
-
+                    /*
+                     * Debuging line
+                     */ 
+                    if (lineObject.id == 57)
+                    {
+                        string aaaaa = "5";
+                    }
+                    /**/
                     if (lineObject.isHeader) //Header has to have only one value
                     {
                         lineObject.exportValue = ProcitajNaSheetu(wbPart, item, lineObject.fieldForValue);
@@ -307,11 +351,25 @@ namespace Business_Case_Reader
                             string vrijednost = ProcitajNaSheetu(wbPart, item, result[i] + result[0]);
                             int duzina = vrijednost.Length;
 
+                            vrijednost = vrijednost.Trim();
+
                             //Some values has formula SUM(something) in it. Remove that part. Leave only value
                             if (vrijednost.Length>12 && vrijednost.Substring(0, 3) == "SUM")
                             {
                                 int gdjeJeZagrada = vrijednost.IndexOf(")");
                                 vrijednost = vrijednost.Substring(gdjeJeZagrada + 1);
+                            }
+
+                            //We operate here with huge amounts. No need for decimal places. No need to convert value to decimal because there is a huge risk for Exceptions
+                            //If it is 0,1112245445 then keep only four decimal places
+                            if (vrijednost.IndexOf(".") > 1)
+                            {
+                                int pozicijaZareza = vrijednost.IndexOf(".");
+                                vrijednost = vrijednost.Substring(0, pozicijaZareza);
+                            }
+                            else if (vrijednost.IndexOf(".") == 1)
+                            {
+                                vrijednost = vrijednost.Substring(0, 6);
                             }
 
                             //Some values are small like 1.124545454E-12. It should be 0
@@ -320,16 +378,17 @@ namespace Business_Case_Reader
                                 vrijednost = "0";
                             }
 
-                            //We operate here with huge amounts. No need for decimal places. No need to convert value to decimal because there is a huge risk for Exceptions
-                            if (vrijednost.IndexOf(".") > 0)
-                            {
-                                int pozicijaZareza = vrijednost.IndexOf(".");
-                                vrijednost = vrijednost.Substring(0, pozicijaZareza);
-                            }
                             
 
-                            if (vrijednost != "0" && vrijednost != "" && vrijednost != null)
+
+                            if (vrijednost != "0" && vrijednost != "" && vrijednost != " " && vrijednost != "  " && vrijednost != null)
                             {
+                                int idNaTBL = 0;
+                                if (i==20)
+                                {
+                                    idNaTBL = lineObject.TBLid;
+                                }
+                                
                                 //Add updated item to the result list
                                 exTable.Add(new ExportTable()
                                 {
@@ -339,7 +398,7 @@ namespace Business_Case_Reader
                                     year = godina,
                                     isOK = lineObject.isOK,
                                     isForTBL = lineObject.isForTBL,
-                                    TBLid = lineObject.TBLid,
+                                    TBLid = idNaTBL,
                                     isHeader = lineObject.isHeader,
                                     ExportPart = lineObject.ExportPart
                                 });
@@ -411,8 +470,16 @@ namespace Business_Case_Reader
             // If the cell does not exist, return an empty string.
             if (theCell != null)
             {
-                SadrzajUPolju = theCell.InnerText;
 
+                //SadrzajUPolju = theCell.InnerText;
+                if (theCell.CellValue != null)
+                {
+                    SadrzajUPolju = theCell.CellValue.InnerText;
+                } else
+                {
+                    SadrzajUPolju = theCell.InnerText;
+                }
+                
                 // If the cell represents an integer number return it. 
                 // For dates, this code returns the serialized value that 
                 // represents the date. The code handles strings and 
@@ -551,9 +618,6 @@ namespace Business_Case_Reader
             //Show dialog box and wait for OK
             if (sfd.ShowDialog() == DialogResult.OK)
             {
-                //Notify user
-                MessageBox.Show("Data will be exported and you will be notified when it is ready.");
-
                 //Try to replace file if already exists. Otherwise save new file
                 if (File.Exists(filename))
                 {
