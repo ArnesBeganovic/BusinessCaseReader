@@ -31,6 +31,16 @@
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.tabovi = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.cb_ProgramCategory = new System.Windows.Forms.ComboBox();
+            this.cb_Market = new System.Windows.Forms.ComboBox();
+            this.cb_ProductGroup = new System.Windows.Forms.ComboBox();
+            this.cb_SDTPrimaryLocation = new System.Windows.Forms.ComboBox();
+            this.cb_OEMAccount = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.btn_browseBC = new System.Windows.Forms.Button();
             this.pic_Loading = new System.Windows.Forms.PictureBox();
             this.tb_FileName = new System.Windows.Forms.TextBox();
@@ -39,12 +49,12 @@
             this.bth_ReadSheet = new System.Windows.Forms.Button();
             this.lb_SheetNames = new System.Windows.Forms.ListBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
             this.btn_ExportCSV = new System.Windows.Forms.Button();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.tabovi.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_Loading)).BeginInit();
@@ -77,6 +87,16 @@
             // 
             this.tabPage1.BackgroundImage = global::Business_Case_Reader.Properties.Resources.The_Right_Products_Hero;
             this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage1.Controls.Add(this.cb_ProgramCategory);
+            this.tabPage1.Controls.Add(this.cb_Market);
+            this.tabPage1.Controls.Add(this.cb_ProductGroup);
+            this.tabPage1.Controls.Add(this.cb_SDTPrimaryLocation);
+            this.tabPage1.Controls.Add(this.cb_OEMAccount);
+            this.tabPage1.Controls.Add(this.label6);
+            this.tabPage1.Controls.Add(this.label5);
+            this.tabPage1.Controls.Add(this.label4);
+            this.tabPage1.Controls.Add(this.label3);
+            this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.btn_browseBC);
             this.tabPage1.Controls.Add(this.pic_Loading);
             this.tabPage1.Controls.Add(this.tb_FileName);
@@ -87,6 +107,150 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Browse File";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // cb_ProgramCategory
+            // 
+            this.cb_ProgramCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_ProgramCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_ProgramCategory.FormattingEnabled = true;
+            this.cb_ProgramCategory.Items.AddRange(new object[] {
+            "Select Item",
+            "Iron",
+            "Bronze",
+            "Silver",
+            "Gold",
+            "Platinum"});
+            this.cb_ProgramCategory.Location = new System.Drawing.Point(763, 349);
+            this.cb_ProgramCategory.Name = "cb_ProgramCategory";
+            this.cb_ProgramCategory.Size = new System.Drawing.Size(175, 33);
+            this.cb_ProgramCategory.TabIndex = 18;
+            // 
+            // cb_Market
+            // 
+            this.cb_Market.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_Market.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_Market.FormattingEnabled = true;
+            this.cb_Market.Items.AddRange(new object[] {
+            "Select Item",
+            "Automotive",
+            "Industrial",
+            "Recreational",
+            "Military",
+            "Other"});
+            this.cb_Market.Location = new System.Drawing.Point(763, 274);
+            this.cb_Market.Name = "cb_Market";
+            this.cb_Market.Size = new System.Drawing.Size(175, 33);
+            this.cb_Market.TabIndex = 17;
+            // 
+            // cb_ProductGroup
+            // 
+            this.cb_ProductGroup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_ProductGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_ProductGroup.FormattingEnabled = true;
+            this.cb_ProductGroup.Items.AddRange(new object[] {
+            "Select Item",
+            "China",
+            "Fabrics",
+            "Foam",
+            "Full Value Chain",
+            "JIT",
+            "Metals and Mechanism",
+            "Recaro",
+            "Trim",
+            "OHS"});
+            this.cb_ProductGroup.Location = new System.Drawing.Point(763, 199);
+            this.cb_ProductGroup.Name = "cb_ProductGroup";
+            this.cb_ProductGroup.Size = new System.Drawing.Size(175, 33);
+            this.cb_ProductGroup.TabIndex = 16;
+            // 
+            // cb_SDTPrimaryLocation
+            // 
+            this.cb_SDTPrimaryLocation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_SDTPrimaryLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_SDTPrimaryLocation.FormattingEnabled = true;
+            this.cb_SDTPrimaryLocation.Items.AddRange(new object[] {
+            "Select Item",
+            "Africa",
+            "Asia",
+            "Australia",
+            "EUrope",
+            "North America",
+            "South America"});
+            this.cb_SDTPrimaryLocation.Location = new System.Drawing.Point(763, 124);
+            this.cb_SDTPrimaryLocation.Name = "cb_SDTPrimaryLocation";
+            this.cb_SDTPrimaryLocation.Size = new System.Drawing.Size(175, 33);
+            this.cb_SDTPrimaryLocation.TabIndex = 15;
+            // 
+            // cb_OEMAccount
+            // 
+            this.cb_OEMAccount.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_OEMAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_OEMAccount.FormattingEnabled = true;
+            this.cb_OEMAccount.Items.AddRange(new object[] {
+            "Select Item",
+            "Volvo",
+            "Ford",
+            "JLR",
+            "TBD"});
+            this.cb_OEMAccount.Location = new System.Drawing.Point(763, 43);
+            this.cb_OEMAccount.Name = "cb_OEMAccount";
+            this.cb_OEMAccount.Size = new System.Drawing.Size(175, 33);
+            this.cb_OEMAccount.TabIndex = 14;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(524, 351);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(202, 25);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Program Category";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(524, 276);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(84, 25);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Market";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(524, 201);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(160, 25);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Product group";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(524, 126);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(234, 25);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "SDT Primary location";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(524, 51);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(155, 25);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "OEM Account";
             // 
             // btn_browseBC
             // 
@@ -101,7 +265,7 @@
             // pic_Loading
             // 
             this.pic_Loading.Image = global::Business_Case_Reader.Properties.Resources.loading;
-            this.pic_Loading.Location = new System.Drawing.Point(270, 153);
+            this.pic_Loading.Location = new System.Drawing.Point(28, 164);
             this.pic_Loading.Name = "pic_Loading";
             this.pic_Loading.Size = new System.Drawing.Size(334, 104);
             this.pic_Loading.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -179,6 +343,17 @@
             this.tabPage3.Text = "Control Data";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(315, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(287, 24);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Control data before Submiting";
+            // 
             // btn_ExportCSV
             // 
             this.btn_ExportCSV.Location = new System.Drawing.Point(780, 443);
@@ -225,17 +400,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(182, 74);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(315, 23);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(287, 24);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Control data before Submiting";
             // 
             // MainForm
             // 
@@ -284,6 +448,16 @@
         private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.Label lbl_Info;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cb_ProgramCategory;
+        private System.Windows.Forms.ComboBox cb_Market;
+        private System.Windows.Forms.ComboBox cb_ProductGroup;
+        private System.Windows.Forms.ComboBox cb_SDTPrimaryLocation;
+        private System.Windows.Forms.ComboBox cb_OEMAccount;
     }
 }
 
